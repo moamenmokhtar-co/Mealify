@@ -1,0 +1,312 @@
+@media (min-width:480px) {
+    header .container ,
+    .home .container ,
+    .chefs .container ,
+    .gallery .container ,
+    .contact-us .container ,
+    footer .container {
+        width: 80%;
+    }
+
+    .home .container .btns .book {
+        flex-basis: 45%;
+    }
+    .home .container .btns .bk {
+        flex-basis: 45%;
+    }
+
+    footer .container .about {
+        flex-basis: 100%;
+    }
+
+
+}
+
+
+/* Small */
+
+
+@media (min-width:577px) {
+    .home .container .home-welcome h2 {
+        font-size: 70px;
+    }
+
+
+    footer .container {
+        width: 85%;
+    }
+    
+
+    .subscribe form {
+        column-gap: 5px;
+        flex-wrap: nowrap;
+    }
+
+    .subscribe form input {
+        flex-basis: 75%;
+        flex-grow: 1;
+    }
+
+    .subscribe form button {
+        margin: 0;
+        padding: 10px 0px;
+        flex-basis: 25%;
+    }
+
+
+}
+
+/* Medium */
+
+
+@media (min-width:768px) {
+    header .container ,
+    .home .container ,
+    .chefs .container ,
+    .gallery .container ,
+    .contact-us .container ,
+    footer .container {
+        width: 95%;
+    }
+
+
+    .home .container .btns {
+        width: 70%;
+    }
+
+
+    .chefs .container .card {
+        flex-basis: 45%;
+    }
+
+    
+
+
+    .gallery .container .card-parent {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .gallery .container .card-parent .col {
+        flex-basis: calc(50% - 10px);
+    }
+    .gallery .container .card-parent .col .card {
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .contact-us .container .card-parent {
+        height: 250px;
+    }
+    
+
+    .contact-us .container .card-parent .card {
+        flex-basis: 49%;
+    }
+
+    .contact-us .container form textarea {
+        height: 170px;
+    }
+
+
+
+    footer .container {
+        justify-content: space-between;
+    }
+
+
+    footer .container .about {
+        order: 1;
+        flex-basis: 45%;
+    }
+
+    footer .container .row-2 {
+        order: 3;
+    }
+
+    footer .container .get-in-touch {
+        order: 2;
+        flex-basis: 45%;
+        align-content: flex-start;
+    }
+
+}
+
+
+/* Large */
+
+@media (min-width:993px) {
+    .home .container {
+        justify-content: space-between;
+    }
+
+    .home .container .image {
+        width: 39%;
+        order: 2;
+    }
+
+    .home .container .left {
+        flex-basis: 45%;
+        order: 1;
+    }
+
+    .home .container .left .home-welcome {
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    .home .container .left .home-welcome h2 {
+        font-size: 80px;
+    }
+
+    .home .container .btns {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
+    .home .container .btns a:first-child {
+        border-radius: 0 100px 100px;
+    }
+
+
+
+    .chefs .container .card-parent {
+        column-gap: 3%;
+        justify-content: center;
+    }
+
+    .chefs .container .card {
+        flex-basis: calc(33.333% - 3%);
+    }
+
+
+    .gallery .container .card-parent .col {
+        flex-basis: calc(33.33333% - 10px);
+    }
+
+    .contact-us .container form {
+        column-gap: 1%;
+        justify-content: center;
+    }
+
+    .contact-us .container form input:first-child {
+        flex-basis: calc(50% - .5%);
+    }
+    .contact-us .container form input:nth-child(2) {
+        flex-basis: calc(50% - .5%);
+    }
+
+    .contact-us .container form textarea {
+        height: 200px;
+    }
+
+
+
+
+
+
+}
+
+/* X-Large */
+
+
+@media (min-width:1201px) {
+
+    header .container ,
+    .home .container ,
+    .chefs .container ,
+    .gallery .container ,
+    .contact-us .container ,
+    footer .container {
+        width: 90%;
+    }
+
+
+    header .container .icon-mode i:last-child {
+        display: none;
+    }
+
+    header .container > ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0 10px;
+        column-gap: 10px;
+    }
+
+    header .container > ul li {
+        padding: 0px 20px;
+        /* background-color: red; */
+
+    }
+
+
+
+
+    header .container > ul li a {
+        /* display: block; */
+        font-size: 16px;
+        text-decoration: none;
+        font-family:"Inter", sans-serif;
+        color: #7F7F90;
+        transition: .4s;
+        font-weight: 600;
+        position: relative;
+    }
+
+    header .container > ul li a::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: .4s;
+    }
+
+
+    header .container > ul li a:hover {
+        color: #212529;
+    }
+    header .container > ul li a:hover:after {
+        width: 100%;
+    }
+
+
+
+
+    footer .container {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+
+    footer .container .about {
+        order: 1;
+        flex-basis: calc(33.3333% - 10px);
+        align-content: flex-start;
+    }
+    footer .container .row-2 {
+        order: 2;
+        flex-basis: calc(33.3333% - 10px);
+
+    }
+
+    footer .container .get-in-touch {
+        order: 3;
+        flex-basis: calc(33.3333% - 10px);
+        align-content: flex-start;
+
+    }
+
+
+
+}
+/* XX-large */
